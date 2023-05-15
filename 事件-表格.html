@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--表格-->
+<div>
+    <!--表格：
+        table:代表整个表格
+        tr:行
+        td:列
+        一个表格可以有多行，一行可以有多列
+
+        table属性：
+        1、border：设置整个表格中边框的宽度
+        2、width：设置表格宽度
+        3、height：设置表格高度
+        4、align:center--让整个表在其父标签中居中
+        5、bgcolor:背景颜色
+        6、cellpadding：设置内容和单元格之间的间距
+        7、cellspacing：设置单元格和单元格中的位置
+        8、 bordercolor：边界颜色
+
+        tr属性：
+        width：设置表格宽度
+        align="center":当前行中所有单元格中的内容居中
+
+        td属性：
+        height：设置表格高度
+        align="center":当前单元格中的内容居中
+
+        注意：所有的属性值都用双引号括起来
+    -->
+    <table align="center" bgcolor="aqua" border='1' bordercolor="green" cellpadding="100" cellspacing="10" height="300"
+           width="600">
+        <tr align="center">
+            <td>姓名</td>
+            <td>成绩</td>
+            <td bgcolor="red">是否留级</td>
+            <td><input type="button" value="删除" class="delete" id="del"></td>
+        </tr>
+        <tr>
+            <td align="center">GHope</td>
+            <td>99</td>
+            <td>False</td>
+            <td><input type="button" value="删除" class="delete" id="del"></td>
+        </tr>
+                <tr>
+            <td align="center">GHope</td>
+            <td>100</td>
+            <td>False</td>
+            <td><input type="button" value="删除" class="delete" id="dele"></td>
+        </tr>
+        <tr>
+            <td>Lucy</td>
+            <td>98</td>
+            <td>False</td>
+            <td><input type="button" value="删除" class="delete" id="del"></td>
+        </tr>
+    </table>
+</div>
+<script src="../pythonProject/static/js/jquery-3.6.3.min.js"></script>
+
+<<!--
+<script>
+    $(function (){      //建立个函数
+        $(".delete").click(function (){     //找到.delete类并做点击动作运行函数
+            $(this).parent().parent().remove()      //找到自己标签的前两个上级标签并删除
+        })
+    })
+</script>
+-->
+<script>
+    $(function (){
+        $("#del").click(function (){
+            $(this).parent().parent().remove()
+        })
+    })
+</script>
+
+</body>
+</html>

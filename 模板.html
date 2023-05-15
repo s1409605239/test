@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--文本标签-->
+<div>
+    <div>
+        <h1>标题一</h1>
+        <h2>biaoti2 </h2>
+        <h3>标题3</h3>
+        <h4>标题4</h4>
+        <h5>标题5</h5>
+        <h6>标题6</h6>
+    </div>            <!--1.标题标签（h1-h6）-->
+    <div>
+        <a href="https://www.jianshu.com/u/5f036f508e2b">简书</a>
+        <p>
+            &nbsp&nbsp&nbsp&nbsp这是最坏的时代，这是最坏的时代。被掩埋的逐渐浮出水面，被捧杀的慢慢回归历史的真相，<br/>
+            被抹杀的偷偷的藏了起来，这一切，只是为了让老三承认，“如果师父同意在中国的地里种鸦片，我就不杀他了”。<br/>
+        <hr/>
+        至于必然险阻的未来，从鹅城活下来的老七能做的已经都做了，他老了，老到了该成为永远不死的小六子的养料<br/>
+        的时候了，<i>新陈代谢</i>是自然规律，新的必然会战胜旧的，这就是<b>历史</b>，这就是<b>时代</b>，
+        这就是<strong><em>邪不压正</em></strong>。
+        </p>
+    </div>              <!--段落标签-->
+    <!--
+            2.段落标签(p)
+            a.一个P标签代表一个段落
+            b.p标签的内容结束后和其它的内容之间默认有一个空行
+            3、文本符号
+            &nbsp；    --空格
+            4.换行标签（br)
+            5.超链接（a）
+            6、文字加粗（b/strong)
+            strong 有强调的作用
+            7、文字倾斜（i/em）
+            em有强调作用
+            8、水平线（hr）
+                                -->
+</div>
+<!--列表标签-->
+<div>
+    <div>
+        <ol>
+            <li>Chinese</li>
+            <li>Match</li>
+            <li>English</li>
+
+        </ol>
+    </div>      <!--有序列表(ol)-->
+    <div>
+        <ul>
+            <li>成都</li>
+            <li>长安</li>
+            <li>北京</li>
+        </ul>
+    </div>      <!--无序列表-->
+    <div>
+        <dl>
+            <dt>City</dt>
+            <dd>Changan</dd>
+            <dd>Beijing</dd>
+            <dd>Shanghai</dd>
+            <dt>Province</dt>
+            <dd>Shaanxi</dd>
+        </dl>
+    </div>      <!--自定义列表-->
+</div>
+<!--图片和超链接-->
+<div>
+    <div>
+        <!--1.图片标签
+            a.src属性：图片的地址（本地地址、网络地址）
+
+            本地地址：绝对路径和相对地址(相对于工程目录)
+            注意：本地图片需要放到工程目录下的img文件夹下
+            b.title属性：图片的标题（鼠标停留在图片上，隔一段时间才显示出来）
+            c.alt属性：图片加载失败后显示的提示信息
+        -->
+        <img src="img/xin.jpg"/>
+        <img alt="图片加载失败" src="https://upload-images.jianshu.io/upload_images/13183583-feb0453292eb6da3.png"
+             title="排序算法"/>
+    </div>      <!--1.图片标签-->
+    <div>
+        <!--2、超链接
+            网页上点击后可以跳转的标签都是超链接
+            href属性：跳转地址（本地地址，网络地址）
+                网络地址：跳转到对应的网页
+                本地地址：当前工程的其它的html文件路径
+                空串/#:刷新页面回到网页的顶部
+                选择器：让网页滚动到网页上的任意位置
+
+            target属性：
+                self:当前页面中打开href的地址
+                blank：在新的也面中打开href的地址
+            a.点击文字跳转
+
+        -->
+        <a href="https://www.baidu.com/" target="_self">百度一下</a>
+        <a href="https://www.baidu.com/" target="_blank">百度一下2</a>
+    </div>      <!--2.超链接标签-->
+</div>
+<!--表格-->
+<div>
+    <!--表格：
+        table:代表整个表格
+        tr:行
+        td:列
+        一个表格可以有多行，一行可以有多列
+
+        table属性：
+        1、border：设置整个表格中边框的宽度
+        2、width：设置表格宽度
+        3、height：设置表格高度
+        4、align:center--让整个表在其父标签中居中
+        5、bgcolor:背景颜色
+        6、cellpadding：设置内容和单元格之间的间距
+        7、cellspacing：设置单元格和单元格中的位置
+        8、 bordercolor：边界颜色
+
+        tr属性：
+        width：设置表格宽度
+        align="center":当前行中所有单元格中的内容居中
+
+        td属性：
+        height：设置表格高度
+        align="center":当前单元格中的内容居中
+
+        注意：所有的属性值都用双引号括起来
+    -->
+    <table align="center" bgcolor="aqua" border='1' bordercolor="green" cellpadding="100" cellspacing="10" height="300"
+           width="600">
+        <tr align="center">
+            <td>姓名</td>
+            <td>成绩</td>
+            <td bgcolor="red">是否留级</td>
+        </tr>
+        <tr>
+            <td align="center">GHope</td>
+            <td>99</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>Lucy</td>
+            <td>98</td>
+            <td>False</td>
+        </tr>
+    </table>
+</div>
+<script src="../pythonProject/static/js/jquery-3.6.3.min.js"></script>
+</body>
+</html>
